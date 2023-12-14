@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning jQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <div id="container"> </div>
+   <button id="btn">FadeOut</button>
+   <button id="btn2">FadeIn</button>
+   <button id="btn3">FadeToggle</button>
+   <button id="btn4">FadeTo</button>
+   <br>
+   <!-- ---------------------------------------------------------------- -->
+   <button id="btn5">SlideDown</button>
+   <button id="btn6">SlideUp</button>
+   <button id="btn7">SlideToggle</button>
+
+   <button id="btn8">Animate</button>
+
+   <hr>
+   <br>
+
+   <input type="text"  id="f" />
+   <p id="content" >This is a paragraph</p>
+   <p id="content1" >This is another paragraph</p>
+   <img src="https://media.istockphoto.com/id/1276936276/photo/creative-background-online-casino-in-a-mans-hand-a-smartphone-with-playing-cards-roulette-and.jpg?s=1024x1024&w=is&k=20&c=Hd5hqc5Ey6IqZmPKvmXjfclw9E5OR5x_-AXjEvGDvWM=" 
+   alt="NOT FOUND" class="img">
+   <!-- <br> -->
+   <!-- <img  src="https://media.istockphoto.com/id/1463013729/photo/online-registration-form-for-modish-form-filling.jpg?s=1024x1024&w=is&k=20&c=EHI3hS1rXOMpRmM1LKEV8zxwYBFEkU-TqffuKtoBPC4="
+   alt="NOT FOUND" class="img2"> -->
+   <br>
+   <button id="btn9">Val</button>
+
+    <!-- no need for this once we have downloaded the entire jquery file present in js folder -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/myjs.js"></script>
+    <script>
+
+        function myfun(){
+            console.log('First Code')
+        }
+
+        $(document).ready(myfun);
+
+        var fun = ()=>{
+            console.log('Second Code')
+        }
+
+          $(document).ready(fun)
+
+          //prefered way of doing
+          $(document).ready(function(){
+            console.log('safer code');
+          });
+
+    </script>
+</body>
+</html>
